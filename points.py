@@ -15,11 +15,11 @@ text = 'cor = ' + str(round(cor, 3))
 fig = plt.figure()
 ax_11 = fig.add_subplot(111, title='第１１週の時点での得点分布', xlabel='合計得点(点）', ylabel='人数（人）', )
 ax_11.hist(s11, bins=20)
-plt.show()
+plt.savefig('points1.png')
 
 fig = plt.figure()
 ax_sca = fig.add_subplot(111, title='第３週の得点と第11週の得点の相関', xlabel='第３週での合計得点（点）', ylabel='第１１州での合計得点（点）')
 ax_sca.scatter(s3, s11)
 ax_sca.text(11, 75, text, ha='center', fontsize=18)
-plt.show()
+plt.savefig('points2.png')
 

@@ -63,4 +63,4 @@ autolabel(rect3)
 
 fig.tight_layout()
 
-plt.show()
+plt.savefig('basic1.png')
